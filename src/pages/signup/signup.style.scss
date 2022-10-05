@@ -1,0 +1,44 @@
+@import "../../styles/variable.scss";
+.signUp{
+    display: flex;
+    flex-direction: column;
+    .signUpBack{
+        margin-right: 20px;
+        color: $textPrimary;
+        &::before{
+            content: "  <";
+        }
+    }
+    .signUpInputs{
+        display: flex;
+        justify-content: space-around;
+        h4{
+            color: $textPrimary;
+        }
+        label{
+            color: $textPrimary;
+            &:not(:last-child):after{
+                content: "*";
+                color: red;
+            }
+        }
+        input{
+            border:1px solid $textPrimary;
+            height: 25px;
+        }
+        .signup_right{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            margin-bottom: 10px;
+        }
+        .btnSignUp{
+            width: 100%;
+            background-color: $primaryColor;
+            border: none;
+            color: $textSecondary;
+            height: 40px;
+            margin: 20px 0;
+        }
+    }
+}

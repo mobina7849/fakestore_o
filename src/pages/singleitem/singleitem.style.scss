@@ -1,0 +1,47 @@
+@import "../../styles/variable.scss";
+.descrption{
+    color: $textPrimary;
+    display: flex;
+    flex-direction: column;
+    .descrptionBack{
+        margin-right: 20px;
+        color: $textPrimary;
+        margin-bottom: 20px;
+
+        &::before{
+            content: "<";
+        } 
+    }
+    .descrptionContent{
+        display: flex;
+        .descrptionP{
+            margin-right: 20px;
+            padding: 10px;
+
+        }
+        .descrptionImg{
+            width: 350px;
+            height: 400px;
+            border: 1px solid #e5e5e5;
+            margin-bottom: 20px;
+        }
+        .price{
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            input{
+                width: 60px;
+            }
+        }
+        .cartBtn{
+            width: 100%;
+            background-color: $primaryColor;
+            border: none;
+            color: $textSecondary;
+            height: 60px;
+            margin: 20px 0;
+        }
+    }
+
+
+}
